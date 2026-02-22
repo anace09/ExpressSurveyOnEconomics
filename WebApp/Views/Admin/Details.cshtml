@@ -1,0 +1,90 @@
+@model List<WebApp.ViewModels.TaskDetailGroupViewModel>
+@{
+    ViewData["Title"] = "Детали студента";
+    var person = ViewBag.Person as WebApp.Models.Person;
+    int total  = ViewBag.Total;
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/admin/details.css" asp-append-version="true" />
+}
+
+<a class="back-link" href="/Admin/Results">← Назад к результатам</a>
+
+<div class="person-card">
+    <div class="person-info">
+        @if (person != null)
+        {
+            <div class="name">@person.LastName @person.FirstName @person.MiddleName</div>
+            <div class="org">@person.Organization</div>
+        }
+        else
+        {
+            <div class="name">Участник не найден</div>
+        }
+    </div>
+    <div class="total-badge">
+        <div class="val">@total</div>
+        <div class="lbl">итого баллов</div>
+    </div>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="no-answers">Ответов не найдено</div>
+}
+else
+{
+    @foreach (var group in Model)
+    {
+        <div class="task-block">
+            <div class="task-header">
+                <div class="task-title">№@group.Task.Id — @group.Task.TitleRu</div>
+                <div class="task-score">@group.EarnedPoints б.</div>
+            </div>
+
+            @if (!group.Answers.Any())
+            {
+                <div class="no-answers">Нет ответов</div>
+            }
+            else
+            {
+                <table class="answers-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Ответ студента</th>
+                            <th>Результат</th>
+                            <th>Баллы</th>
+                            <th>Время</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (int i = 0; i < group.Answers.Count; i++)
+                        {
+                            var a = group.Answers[i];
+                            <tr>
+                                <td class="td-num">@(i + 1)</td>
+                                <td>@a.SelectedAnswer</td>
+                                <td>
+                                    @if (a.IsCorrect)
+                                    {
+                                        <span class="correct">✓ Верно</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="incorrect">✗ Неверно</span>
+                                    }
+                                </td>
+                                <td>@(a.IsCorrect ? a.Points : 0)</td>
+                                <td class="td-time">
+                                    @a.AnsweredAt.ToLocalTime().ToString("dd.MM HH:mm:ss")
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        </div>
+    }
+}

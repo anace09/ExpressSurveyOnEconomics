@@ -1,0 +1,33 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/home/index.css" asp-append-version="true" />
+}
+
+<div class="home-wrapper">
+    <div class="home-card">
+        <div class="home-body">
+            @if (ViewBag.IsRegistered == true)
+            {
+                <div class="home-section">
+                    <div class="home-icon">✅</div>
+                    <h4 class="home-title">@Localizer["AlreadyRegistrated"]</h4>
+                </div>
+                <a href="/Tests" class="home-btn">
+                    @Localizer["ContinueButton"]
+                </a>
+            }
+            else
+            {
+                <div class="home-section">
+                    <div class="home-icon">📝</div>
+                    <h4 class="home-title">@Localizer["Title"]</h4>
+                    <p class="home-desc">@Localizer["Description"]</p>
+                </div>
+                <a href="/Start" class="home-btn">
+                    @Localizer["StartButton"]
+                </a>
+            }
+        </div>
+    </div>
+</div>

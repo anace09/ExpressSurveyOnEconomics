@@ -1,0 +1,106 @@
+@model List<WebApp.ViewModels.StudentResultRowViewModel>
+@{
+    ViewData["Title"] = "Результаты";
+    var tasks  = ViewBag.Tasks as List<WebApp.Models.TestTask> ?? new();
+    string? search = ViewBag.Search;
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/admin/results.css" asp-append-version="true" />
+}
+
+<div class="admin-header">
+    <div class="admin-title">📊 Результаты тестирования</div>
+    <form method="post" asp-action="Logout" asp-controller="Admin">
+        <button class="logout-btn" type="submit">Выйти</button>
+    </form>
+</div>
+
+<div class="stat-bar">
+    <div class="stat-card">
+        <div class="val">@Model.Count</div>
+        <div class="lbl">Студентов</div>
+    </div>
+    <div class="stat-card">
+        <div class="val">@tasks.Count</div>
+        <div class="lbl">Заданий</div>
+    </div>
+    @if (Model.Any())
+    {
+        <div class="stat-card">
+            <div class="val">@Math.Round(Model.Average(r => r.TotalPoints), 1)</div>
+            <div class="lbl">Средний итог</div>
+        </div>
+    }
+</div>
+
+<form method="get" asp-action="Results" asp-controller="Admin" class="search-bar">
+    <input type="text" name="search" value="@search" placeholder="🔍 Поиск по ФИО или организации" />
+    <button type="submit" class="btn-search">Найти</button>
+    <a href="/Admin/Results" class="btn-reset">Сбросить</a>
+</form>
+
+@if (!Model.Any())
+{
+    <div class="empty-state">
+        <div class="empty-icon">📭</div>
+        <div class="empty-text">Результатов не найдено</div>
+    </div>
+}
+else
+{
+    <div class="table-wrap">
+        <table class="results-table">
+            <thead>
+                <tr>
+                    <th class="th-name">Студент</th>
+                    @foreach (var t in tasks)
+                    {
+                        <th>№@t.Id</th>
+                    }
+                    <th>Итого</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th class="th-name th-subtitle">ФИО (Организация)</th>
+                    @foreach (var t in tasks)
+                    {
+                        <th class="th-subtitle-task">@t.TitleRu</th>
+                    }
+                    <th class="th-subtitle">баллов</th>
+                    <th class="th-subtitle"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var row in Model)
+                {
+                    <tr>
+                        <td class="td-name">
+                            <div class="td-name-text">@row.FullName</div>
+                            <div class="org-hint">(@row.Organization)</div>
+                        </td>
+                        @foreach (var t in tasks)
+                        {
+                            <td class="score-cell">
+                                @if (row.ScoreByTask.TryGetValue(t.Id, out int pts))
+                                {
+                                    <span class="score-yes">@pts</span>
+                                }
+                                else
+                                {
+                                    <span class="score-no">—</span>
+                                }
+                            </td>
+                        }
+                        <td class="score-total">@row.TotalPoints</td>
+                        <td>
+                            <a class="btn-details" href="/Admin/Details?participantId=@row.ParticipantId">
+                                Детали →
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

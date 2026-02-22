@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Вход — Админ";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Админ — Вход</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/admin/login.css" />
+</head>
+<body>
+    <div class="login-card">
+        <div class="login-icon">🔐</div>
+        <h2>Панель администратора</h2>
+        <p class="subtitle">Введите данные для входа</p>
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger">
+                @ViewBag.Error
+            </div>
+        }
+
+        <form method="post" asp-action="Login" asp-controller="Admin">
+            <div class="mb-3">
+                <label for="login">Логин</label>
+                <input type="text" id="login" name="login" class="form-control"
+                       placeholder="admin" autocomplete="username" required />
+            </div>
+            <div class="mb-4">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" class="form-control"
+                       placeholder="•••••" autocomplete="current-password" required />
+            </div>
+            <button type="submit" class="btn-login">Войти →</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@model WebApp.ViewModels.TaskPreviewViewModel
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/task-preview.css" asp-append-version="true" />s
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm border-primary">
+                <div class="card-body">
+                    <h1 class="card-title text-center mb-4">@Model.Title</h1>
+
+                    @if (!string.IsNullOrEmpty(Model.Description))
+                    {
+                        <p class="lead text-center mb-4">@Model.Description</p>
+                    }
+
+                    <div class="alert alert-info text-center mb-4">
+                        @Localizer["LeadTime", @Model.TimeLimitFormatted]
+                    </div>
+
+                    <div class="mb-4">
+                        <h5>@Localizer["AssessmentScale"]</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">@Localizer["CorrectAnswer", @Model.CorrectPointsFormatted]</li>
+                            <li class="list-group-item">@Localizer["IncorrectAnswer", @Model.IncorrectPointsFormatted]</li>
+                            <li class="list-group-item">@Localizer["MaximumNumberOfPoints", @Model.MaxPointsFormatted]</li>
+                        </ul>
+                    </div>
+
+                    <div class="d-grid">
+                        <a asp-action="StartTask" asp-route-id="@Model.Id"
+                           class="btn btn-gradient-primary btn-lg py-2">
+                            @Localizer["StartTask"]
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

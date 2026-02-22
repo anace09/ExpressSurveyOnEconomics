@@ -1,0 +1,25 @@
+﻿.start-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto 0;
+    min-width: 220px;
+    padding: 14px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    background: linear-gradient(90deg, #4f46e5, #2563eb);
+    color: white;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 4px 14px rgba(79,70,229,0.35);
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+    .start-btn:hover {
+        background: linear-gradient(90deg, #4338ca, #1d4ed8);
+        color: white;
+        box-shadow: 0 8px 24px rgba(79,70,229,0.45);
+        transform: scale(1.04) translateY(-1px);
+    }

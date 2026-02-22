@@ -1,0 +1,214 @@
+﻿#submitModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 99999;
+    align-items: center;
+    justify-content: center;
+}
+
+    #submitModal.show {
+        display: flex;
+    }
+
+#modalBox {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+    #modalBox h5 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+        color: #111827;
+    }
+
+    #modalBox p {
+        color: #6b7280;
+        margin-bottom: 0;
+    }
+
+.modal-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.75rem;
+}
+
+    .modal-btns button {
+        padding: 10px 32px;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+    }
+
+#modalCancel {
+    background: #f3f4f6;
+    color: #374151;
+    border: 1px solid #e5e7eb;
+}
+
+    #modalCancel:hover {
+        background: #e5e7eb;
+    }
+
+#modalConfirm {
+    background: linear-gradient(90deg, #4f46e5, #2563eb);
+    color: white;
+}
+
+    #modalConfirm:hover {
+        background: linear-gradient(90deg, #4338ca, #1d4ed8);
+    }
+
+.question-card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+    .question-card .card-header {
+        background: #f8fafc;
+        font-weight: 600;
+        border-bottom: 1px solid #eef2f7;
+    }
+
+.timer-box {
+    background: white;
+    border-radius: 16px;
+    padding: 14px 22px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    border: 1px solid #eef2f7;
+    min-width: 170px;
+    text-align: center;
+}
+
+.timer-label {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.timer-value {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#cheatOverlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #0f172a;
+    z-index: 999999;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+    #cheatOverlay.show {
+        display: flex;
+    }
+
+    #cheatOverlay h2 {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        color: #f87171;
+    }
+
+    #cheatOverlay p {
+        font-size: 1.1rem;
+        color: #94a3b8;
+        max-width: 420px;
+    }
+
+    #cheatOverlay .spinner {
+        width: 48px;
+        height: 48px;
+        border: 4px solid #334155;
+        border-top-color: #f87171;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+        margin: 1.5rem auto 0;
+    }
+
+#cheatCountdown {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #f87171;
+    margin: 1rem 0;
+    line-height: 1;
+}
+
+.alert-fullscreen-warn {
+    background: linear-gradient(90deg, #fef3c7, #fde68a);
+    border: 1px solid #f59e0b;
+    border-radius: 12px;
+    padding: 10px 16px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #92400e;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#contentVeil {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #0f172a;
+    z-index: 99998;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+    #contentVeil .veil-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    #contentVeil h2 {
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin-bottom: 0.75rem;
+    }
+
+    #contentVeil p {
+        color: #94a3b8;
+        max-width: 380px;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+    }
+
+    #contentVeil .veil-btn {
+        background: linear-gradient(90deg, #4f46e5, #2563eb);
+        padding: 14px 40px;
+        border-radius: 14px;
+        font-weight: 700;
+        font-size: 1.1rem;
+        box-shadow: 0 8px 24px rgba(79,70,229,0.4);
+    }
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

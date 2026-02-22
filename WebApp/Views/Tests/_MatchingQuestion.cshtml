@@ -1,0 +1,28 @@
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@model WebApp.ViewModels.MatchingQuestionViewModel
+
+<div class="matching-question" data-question-id="@Model.Id">
+    <div class="matching-grid">
+        <div class="column definitions-column">
+            <h6>@Localizer["Definitions"]</h6>
+            <div class="definitions-list" id="definitions_@Model.Id">
+                @for (int i = 0; i < Model.LeftItems.Count; i++)
+                {
+                    <div class="card definition-card">@Model.LeftItems[i]</div>
+                }
+            </div>
+        </div>
+
+        <div class="column terms-column">
+            <h6>@Localizer["Terms"]</h6>
+            <div class="terms-list" id="sortable_@Model.Id">
+                @for (int i = 0; i < Model.RightItems.Count; i++)
+                {
+                    <div class="card term-card" data-index="@Model.RightItemIndices[i]">@Model.RightItems[i]</div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <input type="hidden" name="matchingAnswers[@Model.Id]" id="matchingInput_@Model.Id" value="[]" />
+</div>

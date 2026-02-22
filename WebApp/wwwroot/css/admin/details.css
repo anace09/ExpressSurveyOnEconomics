@@ -1,0 +1,141 @@
+﻿.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #4f46e5;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+    .back-link:hover {
+        color: #4338ca;
+    }
+
+.person-card {
+    background: white;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.person-info .name {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #111827;
+}
+
+.person-info .org {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
+.total-badge {
+    background: linear-gradient(90deg, #4f46e5, #2563eb);
+    color: white;
+    border-radius: 14px;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    margin-left: auto;
+}
+
+    .total-badge .val {
+        font-size: 2rem;
+        font-weight: 900;
+        line-height: 1;
+    }
+
+    .total-badge .lbl {
+        font-size: 0.8rem;
+        opacity: 0.85;
+        margin-top: 2px;
+    }
+
+.task-block {
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.task-header {
+    background: linear-gradient(135deg, #4f46e5, #2563eb);
+    color: white;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .task-header .task-title {
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    .task-header .task-score {
+        font-size: 1.3rem;
+        font-weight: 900;
+        background: rgba(255,255,255,0.2);
+        border-radius: 10px;
+        padding: 4px 14px;
+    }
+
+.answers-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .answers-table th {
+        background: #f8fafc;
+        color: #6b7280;
+        padding: 9px 14px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-align: left;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .answers-table td {
+        padding: 9px 14px;
+        border-bottom: 1px solid #f1f5f9;
+        font-size: 0.87rem;
+        color: #374151;
+    }
+
+    .answers-table tr:last-child td {
+        border-bottom: none;
+    }
+
+    .answers-table td.td-num {
+        color: #9ca3af;
+        width: 36px;
+    }
+
+    .answers-table td.td-time {
+        color: #9ca3af;
+        font-size: 0.82rem;
+    }
+
+.correct {
+    color: #16a34a;
+    font-weight: 700;
+}
+
+.incorrect {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+.no-answers {
+    padding: 1.5rem;
+    text-align: center;
+    color: #9ca3af;
+}

@@ -1,0 +1,83 @@
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@model WebApp.ViewModels.TableQuestionViewModel
+@{
+    int lastEditableCol = Model.EditableColumns?.Any() == true
+        ? Model.EditableColumns.Max()
+        : -1;
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/tests/table-question.css" asp-append-version="true" />
+}
+
+<div class="table-question mb-4">
+    @if (Model.TableData == null || !Model.TableData.Any())
+    {
+        <div class="alert alert-danger">Таблица не загружена. Обновите страницу.</div>
+    }
+    else
+    {
+        <div class="table-container">
+            <table class="economic-table">
+                <thead>
+                    <tr>
+                        @foreach (var header in Model.Headers)
+                        {
+                            <th>@header</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int row = 0; row < Model.TableData.Count; row++)
+                    {
+                        <tr>
+                            @for (int col = 0; col < Model.TableData[row].Count; col++)
+                            {
+                                var cell = Model.TableData[row][col];
+                                if (row == 0 || Model.EditableColumns?.Contains(col) != true)
+                                {
+                                    <td class="fixed-cell">@cell</td>
+                                }
+                                else if (col == lastEditableCol)
+                                {
+                                    <td class="input-cell">
+                                        <select class="condition-select" name="tableAnswers[@Model.Id][@row][@col]">
+                                            <option value="" disabled selected>—</option>
+                                            <option value="МС>МR">@("МС > МR")</option>
+                                            <option value="МС<МR">@("МС < МR")</option>
+                                            <option value="МС=МR">@("МС = МR")</option>
+                                        </select>
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td class="input-cell">
+                                        <input type="text"
+                                               class="cell-input"
+                                               name="tableAnswers[@Model.Id][@row][@col]"
+                                               value="@cell"
+                                               placeholder="?" />
+                                    </td>
+                                }
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="optimal-section">
+            <div class="optimal-inputs">
+                <div class="optimal-field">
+                    <label>@Localizer["SalesVolumeQ"]</label>
+                    <input type="number" min="0" step="1" name="optimalQ[@Model.Id]" required />
+                </div>
+                <div class="optimal-field">
+                    <label>@Localizer["PriceP"]</label>
+                    <input type="number" min="0" step="1" name="optimalP[@Model.Id]" required />
+                </div>
+            </div>
+            <p class="points-hint">@Localizer["TaskDescription"]</p>
+        </div>
+    }
+</div>

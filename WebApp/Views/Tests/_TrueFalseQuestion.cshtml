@@ -1,0 +1,23 @@
+@model dynamic
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<div class="tf-options mt-3">
+    <input type="radio"
+           class="btn-check"
+           name="answers[@Model.Id]"
+           id="tf_true_@Model.Id"
+           value="true">
+    <label class="tf-btn" for="tf_true_@Model.Id">
+        @Localizer["True"]
+    </label>
+
+    <input type="radio"
+           class="btn-check"
+           name="answers[@Model.Id]"
+           id="tf_false_@Model.Id"
+           value="false">
+    <label class="tf-btn" for="tf_false_@Model.Id">
+        @Localizer["False"]
+    </label>
+</div>

@@ -1,0 +1,109 @@
+@model WebApp.Models.Person
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = "Начало теста";
+    var participantId   = HttpContextAccessor.HttpContext?.Session.GetString("ParticipantId");
+    var participantName = HttpContextAccessor.HttpContext?.Session.GetString("ParticipantName");
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/start/index.css" asp-append-version="true" />
+}
+
+<div class="d-flex align-items-center justify-content-center vh-100 bg-light">
+    <div class="card shadow-lg border-0" style="max-width:720px;width:100%;">
+        <div class="card-body p-4 p-md-5">
+
+            <div class="text-center mb-4">
+                <div class="display-6">🧑‍🎓</div>
+                <h3 class="mt-2 mb-0">@Localizer["Title"]</h3>
+            </div>
+
+            @if (ViewBag.AuthError != null)
+            {
+                <div class="alert alert-warning alert-dismissible fade show">
+                    @ViewBag.AuthError
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }
+
+            @if (participantId != null)
+            {
+                <div class="alert alert-success text-center">
+                    @Localizer["HelloUser"] <strong>@participantName</strong>!<br />
+                    @Localizer["AlreadyRegistered"]
+                </div>
+
+                <a href="/tests" class="start-btn">
+                    @Localizer["ContinueButton"]
+                </a>
+
+                <div class="text-center mt-3 small">
+                    @Localizer["NotYou"]
+                    <a href="/Start?clear=true" class="text-danger">
+                        @Localizer["ClearSession"]
+                    </a>
+                </div>
+            }
+            else
+            {
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div asp-validation-summary="All" class="alert alert-danger"></div>
+                }
+
+                @if (ViewBag.IsRegistered == true)
+                {
+                    <div class="alert alert-warning d-flex justify-content-between align-items-center">
+                        <span>
+                            @ViewData.ModelState[string.Empty]?.Errors.FirstOrDefault()?.ErrorMessage
+                        </span>
+                        <a href="/tests" class="start-btn">
+                            @Localizer["ContinueButton"]
+                        </a>
+                    </div>
+                }
+
+                <p class="text-muted text-center">
+                    @Localizer["Description"]
+                </p>
+
+                <form asp-action="Index" method="post" class="mt-4">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label asp-for="FirstName" class="form-label">@Localizer["Name"]</label>
+                            <input asp-for="FirstName" class="form-control form-control-lg" required />
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label asp-for="LastName" class="form-label">@Localizer["Surname"]</label>
+                            <input asp-for="LastName" class="form-control form-control-lg" required />
+                            <span asp-validation-for="LastName" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label asp-for="MiddleName" class="form-label">@Localizer["MiddleName"]</label>
+                            <input asp-for="MiddleName" class="form-control form-control-lg" required />
+                            <span asp-validation-for="MiddleName" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label asp-for="Organization" class="form-label">@Localizer["Organization"]</label>
+                            <input asp-for="Organization" class="form-control form-control-lg" required />
+                            <span asp-validation-for="Organization" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="start-btn">
+                        @Localizer["StartButton"]
+                    </button>
+                </form>
+            }
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

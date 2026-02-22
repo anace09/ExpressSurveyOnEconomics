@@ -1,0 +1,61 @@
+@using System.Globalization
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+<!DOCTYPE html>
+<html lang="@CultureInfo.CurrentUICulture.Name" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Тест знаний</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/shared/layout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebApp.styles.css" asp-append-version="true" />
+    @RenderSection("Styles", required: false)
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-indigo-50 via-white to-blue-50 min-h-screen antialiased flex flex-col">
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-200/30 shadow-sm">
+        <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+            <a href="/" class="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600 tracking-tight">
+                @Localizer["Title"]
+            </a>
+            <div class="flex items-center gap-2.5">
+                <a href="@Url.Action("Set", "Culture", new { culture = "ru", returnUrl = Context.Request.Path + Context.Request.QueryString })"
+                   class="px-3.5 py-1.5 text-sm font-medium rounded-full transition-all duration-300
+                          @(CultureInfo.CurrentUICulture.Name.StartsWith("ru") ? "bg-indigo-600 text-white shadow" : "text-gray-700 hover:bg-indigo-50 hover:text-indigo-700")">
+                    Рус
+                </a>
+                <a href="@Url.Action("Set", "Culture", new { culture = "kk", returnUrl = Context.Request.Path + Context.Request.QueryString })"
+                   class="px-3.5 py-1.5 text-sm font-medium rounded-full transition-all duration-300
+                          @(CultureInfo.CurrentUICulture.Name.StartsWith("kk") ? "bg-indigo-600 text-white shadow" : "text-gray-700 hover:bg-indigo-50 hover:text-indigo-700")">
+                    Қаз
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main role="main" class="flex-grow py-6 px-4 sm:px-6 lg:px-8">
+        @RenderBody()
+    </main>
+
+    <footer class="border-t border-gray-200/30 bg-white/50 backdrop-blur-sm py-4 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 text-center text-sm text-gray-500">
+            © @DateTime.Now.Year • Karagandy
+        </div>
+    </footer>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,52 @@
+@model WebApp.ViewModels.TaskResultViewModel
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+
+@{
+    var percent = Model.MaxPoints == 0 ? 0 :
+        (int)Math.Round((double)Model.EarnedPoints / Model.MaxPoints * 100);
+
+    string resultClass = percent switch
+    {
+        >= 85 => "excellent",
+        >= 60 => "good",
+        _ => "bad"
+    };
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/tests/task-result.css" asp-append-version="true" />
+}
+
+<div class="result-page">
+    <div class="result-card @resultClass">
+
+        <div class="result-header">
+            <h2 class="result-title">@Model.Title</h2>
+            <div class="score-circle">
+                <span>@percent%</span>
+            </div>
+        </div>
+
+        <div class="result-body">
+            <p class="score-text">
+                @Localizer["YouGet"]
+                <span class="highlight">@Model.EarnedPoints</span>
+                @Localizer["From"]
+                <span class="highlight">@Model.MaxPoints</span> @Localizer["Mark"]
+            </p>
+
+            <div class="progress-wrapper">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width:@percent%"></div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <a asp-action="Index" class="btn btn-back">
+                    @Localizer["BackToTask"]
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>

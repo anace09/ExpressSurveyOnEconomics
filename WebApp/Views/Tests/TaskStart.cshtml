@@ -1,0 +1,158 @@
+@model WebApp.ViewModels.TaskStartViewModel
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/tests/task-start.css" asp-append-version="true" />
+    @switch (Model.Questions.FirstOrDefault()?.Type)
+    {
+        case QuestionType.TrueFalse:
+            <link rel="stylesheet" href="~/css/tests/true-false-question.css" asp-append-version="true" />
+            break;
+        case QuestionType.MultipleChoice:
+            <link rel="stylesheet" href="~/css/tests/multiple-choice-question.css" asp-append-version="true" />
+            break;
+        case QuestionType.Categorization:
+            <link rel="stylesheet" href="~/css/tests/categorization-question.css" asp-append-version="true" />
+            break;
+        case QuestionType.Matching:
+            <link rel="stylesheet" href="~/css/tests/matching-question.css" asp-append-version="true" />
+            break;
+        case QuestionType.Table:
+            <link rel="stylesheet" href="~/css/tests/table-question.css" asp-append-version="true" />
+            break;
+        default:
+            break;
+    }
+}
+
+<div id="cheatOverlay">
+    <h2>⛔ @Localizer["CheatOverlayTitle"]</h2>
+    <p>@Localizer["CheatOverlayDescription"]<br>@Localizer["CheatOverlaySubdescription"]</p>
+    <div id="cheatCountdown">10</div>
+    <p style="font-size:0.85rem;color:#64748b;">@Localizer["CheatOverlayHint"]</p>
+    <div class="spinner"></div>
+</div>
+
+<div id="contentVeil">
+    <div class="veil-icon">🔒</div>
+    <h2>@Localizer["FullscreenWarningTitle"]</h2>
+    <p>
+        @Localizer["FullscreenWarningDescription"]<br>
+        @Localizer["FullscreenWarningSubdescription"]
+    </p>
+    <div class="veil-btn">@Localizer["FullscreenWarningButton"]</div>
+</div>
+
+<div id="submitModal">
+    <div id="modalBox">
+        <h5>@Localizer["ConfirmaionTitle"]</h5>
+        <p>@Localizer["ConfirmaionDescription"]</p>
+        <div class="modal-btns">
+            <button id="modalCancel">@Localizer["ConfirmationNo"]</button>
+            <button id="modalConfirm">@Localizer["ConfirmationYes"]</button>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+
+            @if (ViewBag.AlreadyCompleted == true)
+            {
+                <div class="alert alert-warning shadow-sm text-center">
+                    <strong>Вы уже проходили это задание</strong><br />
+                    Набрано: @ViewBag.EarnedPoints из @ViewBag.MaxPoints<br />
+                    <em>Пересдача запрещена</em>
+                </div>
+            }
+            else
+            {
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="fw-bold m-0">@Localizer["TaskTitle", @Model.Id]</h2>
+                    <div class="timer-box">
+                        <div class="timer-label">@Localizer["RemainingTime"]</div>
+                        <div id="timer" class="timer-value">@Model.TimeLimitSeconds сек.</div>
+                    </div>
+                </div>
+
+                <div class="alert-fullscreen-warn mb-3">
+                    <span>🔒</span>
+                    <span>@Localizer["FullScreenDescription"]</span>
+                </div>
+
+                <form asp-action="SubmitTaskAnswers" method="post" novalidate
+                      data-end-time="@Model.EndTimeUtc">
+                    <input type="hidden" name="taskId" value="@Model.Id" />
+                    <input type="hidden" name="exitedFullscreen" id="exitedFullscreen" value="false" />
+
+                    @for (int i = 0; i < Model.Questions.Count; i++)
+                    {
+                        var q = Model.Questions[i];
+                        <div class="card question-card mb-4">
+                            <div class="card-header">
+                                @if (Model.Questions.Count > 1)
+                                {
+                                    @Localizer["QuestionTitle", i + 1]
+                                }
+                                else
+                                {
+                                    @Model.Questions[i].Text
+                                }
+                            </div>
+                            <div class="card-body">
+                                @if (q.Type == QuestionType.TrueFalse)
+                                {
+                                    <h5 class="mb-3">@q.Text</h5>
+                                }
+                                @switch (q.Type)
+                                {
+                                    case QuestionType.TrueFalse:
+                                        @await Html.PartialAsync("_TrueFalseQuestion", q)
+                                        break;
+                                    case QuestionType.MultipleChoice:
+                                        @await Html.PartialAsync("_MultipleChoiceQuestion", q)
+                                        break;
+                                    case QuestionType.Categorization:
+                                        @await Html.PartialAsync("_CategorizationQuestion", q)
+                                        break;
+                                    case QuestionType.Matching:
+                                        @await Html.PartialAsync("_MatchingQuestion", q)
+                                        break;
+                                    case QuestionType.Table:
+                                        @await Html.PartialAsync("_TableQuestion", q)
+                                        break;
+                                    default:
+                                        <div class="alert alert-danger">Неизвестный тип вопроса</div>
+                                        break;
+                                }
+                            </div>
+                        </div>
+                    }
+
+                    <button type="submit" class="btn btn-gradient-primary btn-lg w-100 mt-3">
+                        @Localizer["CompleteAndSubmit"]
+                    </button>
+                </form>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/tests/task-start.js" asp-append-version="true"></script>
+    @switch (Model.Questions.FirstOrDefault()?.Type)
+    {
+        case QuestionType.Categorization:
+            <script src="~/js/tests/categorization-question.js" asp-append-version="true"></script>
+            break;
+        case QuestionType.Matching:
+            <script src="~/js/tests/matching-question.js" asp-append-version="true"></script>
+            break;
+        default:
+            break;
+    }
+}
