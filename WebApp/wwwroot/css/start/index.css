@@ -17,6 +17,12 @@
     cursor: pointer;
 }
 
+.start-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
     .start-btn:hover {
         background: linear-gradient(90deg, #4338ca, #1d4ed8);
         color: white;

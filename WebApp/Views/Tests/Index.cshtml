@@ -38,7 +38,7 @@
 
                         <div class="mt-2 mb-3 small">
                             <div>
-                                ⏱
+                                
                                 @if (minutes > 0 && seconds > 0)
                                 {
                                     @Localizer["TaskTimeLimitMinSec", minutes, seconds]
@@ -52,8 +52,8 @@
                                     @Localizer["TaskTimeLimitSecOnly", seconds]
                                 }
                             </div>
-                            <div>❓ @Localizer["Questions", @task.QuestionCount]</div>
-                            <div>🏆 @Localizer["MaxGrade", @task.MaxPoints]</div>
+                            <div>@Localizer["Questions", @task.QuestionCount]</div>
+                            <div>@Localizer["MaxGrade", @task.MaxPoints]</div>
                             @if (task.IsCompleted)
                             {
                                 <div class="text-success mt-1">
