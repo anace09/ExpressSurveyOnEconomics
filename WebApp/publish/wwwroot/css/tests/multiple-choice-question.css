@@ -1,0 +1,51 @@
+.mc-option input[type="radio"] {
+    display: none;
+}
+
+.mc-label {
+    display: block;
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    position: relative;
+    padding-right: 48px;
+}
+
+.mc-label:hover {
+    border-color: #2563eb;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+    transform: translateY(-3px) scale(1.02);
+}
+
+.mc-option input[type="radio"]:checked + .mc-label {
+    border-color: #2563eb;
+    background: linear-gradient(90deg, #eff6ff, #eef2ff);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.25);
+    font-weight: 600;
+    transform: translateY(-2px) scale(1.03);
+}
+
+.mc-label::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #2563eb;
+    transform: translateY(-50%) scale(0);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.mc-option input[type="radio"]:checked + .mc-label::after {
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+    background: #2563eb;
+}

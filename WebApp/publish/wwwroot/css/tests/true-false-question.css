@@ -1,0 +1,29 @@
+.tf-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.tf-btn {
+    padding: 14px;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid #e5e7eb;
+    background: #fff;
+    transition: all .2s ease;
+}
+
+.tf-btn:hover {
+    border-color: #2563eb;
+    transform: translateY(-1px);
+}
+
+.btn-check:checked + .tf-btn {
+    background: linear-gradient(90deg, #4f46e5, #2563eb);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
