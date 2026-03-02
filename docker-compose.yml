@@ -1,0 +1,21 @@
+﻿services:
+  webapp:
+    build:
+      context: .
+      dockerfile: WebApp/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIROMENT=Production
+      - ASPNETCORE_URLS=http://+:8080
+      - AdminPanel__Login=${ADMIN_LOGIN}
+      - AdminPanel__PasswordHash=${ADMIN_PASSWORD_HASH}
+    volumes:
+      - sqlite-data:/app/data
+      - dataprotection-keys:/root/.aspnet/DataProtection-Keys
+    restart: unless-stopped
+
+volumes:
+  sqlite-data:
+  dataprotection-keys:
+     

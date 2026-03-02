@@ -25,8 +25,9 @@ builder.Services.AddControllersWithViews()
 
 builder.Services.AddHttpContextAccessor();
 
+var dbPath = Path.Combine("/app/data", "shop.db");
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite("Data Source=shop.db"));
+    options.UseSqlite($"Data Source={dbPath}"));
 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
