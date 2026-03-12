@@ -150,4 +150,13 @@
   <data name="ViewTask" xml:space="preserve">
     <value>Тапсырманы қарау</value>
   </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Шығу</value>
+  </data>
+  <data name="AllCompleted" xml:space="preserve">
+    <value>Барлық тапсырмалар орындалды!</value>
+  </data>
+  <data name="YourTotalScore" xml:space="preserve">
+    <value>Сіздің жалпы нәтижеңіз</value>
+  </data>
 </root>

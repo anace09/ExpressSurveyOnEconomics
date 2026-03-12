@@ -99,5 +99,13 @@ namespace WebApp.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index");
+        }
+
     }
 }

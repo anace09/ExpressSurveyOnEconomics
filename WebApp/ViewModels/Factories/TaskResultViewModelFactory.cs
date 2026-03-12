@@ -6,7 +6,9 @@ public class TaskResultViewModelFactory
 {
     public TaskResultViewModel Create(TestTask task, IEnumerable<UserAnswer> answers)
     {
-        var earned = answers.Sum(a => a.IsCorrect ? 1 : 0);
+        var earned = answers.Sum(a => a.IsCorrect
+    ? (a.Points > 0 ? a.Points : 1)
+    : 0);
 
         return new TaskResultViewModel
         {

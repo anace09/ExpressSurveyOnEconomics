@@ -5,17 +5,26 @@
     <link rel="stylesheet" href="~/css/tests/index.css" asp-append-version="true" />
 }
 
+@{
+    bool allCompleted = Model.All(t => t.IsCompleted);
+    int totalEarned = Model.Sum(t => t.EarnedPoints);
+    int totalMax = Model.Sum(t => t.MaxPoints);
+}
+
 <div class="container py-4">
+
+    <div class="d-flex justify-content-end mb-3">
+        <a asp-controller="Start" asp-action="Index" class="btn btn-outline-secondary btn-sm">
+            @Localizer["Logout"]
+        </a>
+    </div>
+
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         @foreach (var task in Model)
         {
             var minutes = task.TimeLimit / 60;
             var seconds = task.TimeLimit % 60;
-            var cardClass = task.IsCompleted
-                ? "border-success"
-                : task.IsLocked
-                ? "border-secondary bg-light"
-                : "border-primary";
+            var cardClass = task.IsCompleted ? "border-success" : task.IsLocked ? "border-secondary bg-light" : "border-primary";
 
             <div class="col">
                 <div class="card h-100 shadow-sm @cardClass">
@@ -32,13 +41,10 @@
                             }
                         </h5>
 
-                        <p class="card-text text-muted small text-truncate-2">
-                            @task.Description
-                        </p>
+                        <p class="card-text text-muted small text-truncate-2">@task.Description</p>
 
                         <div class="mt-2 mb-3 small">
                             <div>
-                                
                                 @if (minutes > 0 && seconds > 0)
                                 {
                                     @Localizer["TaskTimeLimitMinSec", minutes, seconds]
@@ -52,36 +58,26 @@
                                     @Localizer["TaskTimeLimitSecOnly", seconds]
                                 }
                             </div>
-                            <div>@Localizer["Questions", @task.QuestionCount]</div>
-                            <div>@Localizer["MaxGrade", @task.MaxPoints]</div>
+                            <div>@Localizer["Questions", task.QuestionCount]</div>
+                            <div>@Localizer["MaxGrade", task.MaxPoints]</div>
                             @if (task.IsCompleted)
                             {
-                                <div class="text-success mt-1">
-                                    @Localizer["Result", @task.EarnedPoints, @task.MaxPoints]
-                                </div>
+                                <div class="text-success mt-1">@Localizer["Result", task.EarnedPoints, task.MaxPoints]</div>
                             }
                         </div>
 
                         <div class="mt-auto">
                             @if (task.IsCompleted)
                             {
-                                <a asp-action="TaskResult" asp-route-id="@task.Id"
-                                   class="btn-task btn-task-result">
-                                    @Localizer["ViewResult"]
-                                </a>
+                                <a asp-action="TaskResult" asp-route-id="@task.Id" class="btn-task btn-task-result">@Localizer["ViewResult"]</a>
                             }
                             else if (task.IsLocked)
                             {
-                                <button class="btn-task btn-task-locked" disabled>
-                                    @Localizer["Unavailable"]
-                                </button>
+                                <button class="btn-task btn-task-locked" disabled>@Localizer["Unavailable"]</button>
                             }
                             else
                             {
-                                <a asp-action="TaskPreview" asp-route-id="@task.Id"
-                                   class="btn-task btn-task-start">
-                                    @Localizer["ViewTask"]
-                                </a>
+                                <a asp-action="TaskPreview" asp-route-id="@task.Id" class="btn-task btn-task-start">@Localizer["ViewTask"]</a>
                             }
                         </div>
                     </div>
@@ -90,3 +86,29 @@
         }
     </div>
 </div>
+
+@if (allCompleted)
+{
+    <div id="summaryModal" class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="background:rgba(0,0,0,0.6);z-index:9999;">
+        <div class="bg-white text-center shadow-lg" style="max-width:420px;width:90%;border-radius:24px;padding:2.5rem 2rem;">
+
+            <div style="font-size:3.5rem;line-height:1;">🎉</div>
+
+            <h3 class="fw-bold mt-3 mb-1">@Localizer["AllCompleted"]</h3>
+            <p class="text-muted mb-4" style="font-size:0.95rem;">@Localizer["YourTotalScore"]</p>
+
+            <div style="background:linear-gradient(135deg,#4f46e5,#2563eb);border-radius:16px;padding:1.5rem;margin-bottom:1.5rem;">
+                <div class="text-white fw-bold" style="font-size:3rem;line-height:1;">@totalEarned / @totalMax</div>
+                <div class="text-white mt-2" style="opacity:0.8;font-size:1rem;">
+                    @Math.Round(totalMax > 0 ? (double)totalEarned / totalMax * 100 : 0, 1)%
+                </div>
+            </div>
+
+            <a asp-controller="Start" asp-action="Logout"
+                   class="btn btn-primary w-100 py-2" style="border-radius:12px;font-weight:600;font-size:1rem;">
+                @Localizer["Logout"]
+            </a>
+
+        </div>
+    </div>
+}

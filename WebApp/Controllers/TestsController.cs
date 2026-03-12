@@ -201,7 +201,7 @@ namespace WebApp.Controllers
 
             var result = await _engine.CheckAsync(taskId, participantId, form);
 
-            return View("TaskResult", result);
+            return RedirectToAction("TaskResult", new { id = taskId });
         }
 
         [HttpGet]

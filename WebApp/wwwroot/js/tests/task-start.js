@@ -13,6 +13,11 @@
 
     if (!form || !timerDisplay) return;
 
+    console.log('endTime raw:', form.dataset.endTime);
+    console.log('endTime parsed:', new Date(form.dataset.endTime));
+    console.log('now:', new Date());
+    console.log('diff seconds:', (new Date(form.dataset.endTime) - Date.now()) / 1000);
+
     // Время окончания передаётся через data-атрибут на теге <form>
     const endTime = new Date(form.dataset.endTime);
 

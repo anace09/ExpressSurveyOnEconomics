@@ -9,27 +9,26 @@ namespace WebApp.Controllers
         public IActionResult Set(string culture, string returnUrl = null)
         {
             if (string.IsNullOrEmpty(culture))
-            {
                 return LocalRedirect(returnUrl ?? "/");
-            }
 
             var supported = new[] { "ru", "kk" };
             if (!supported.Contains(culture))
-            {
                 return BadRequest("Неподдерживаемая культура");
-            }
 
             Response.Cookies.Append(
-                CookieRequestCultureProvider.DefaultCookieName,  
+                CookieRequestCultureProvider.DefaultCookieName,
                 CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture, culture)),
                 new CookieOptions
                 {
                     Expires = DateTimeOffset.UtcNow.AddYears(1),
                     HttpOnly = true,
-                    Secure = Request.IsHttps,        
+                    Secure = Request.IsHttps,
                     SameSite = SameSiteMode.Lax,
                     Path = "/"
                 });
+
+            if (!string.IsNullOrEmpty(returnUrl) && returnUrl.Contains("SubmitTaskAnswers"))
+                return LocalRedirect("/Tests");
 
             return LocalRedirect(returnUrl ?? "/");
         }
