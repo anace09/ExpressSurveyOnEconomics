@@ -3,6 +3,66 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\wwwroot\\css\\tests\\matching-question.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\wwwroot\\css\\tests\\matching-question.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\views\\tests\\_matchingquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\tests\\_matchingquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\wwwroot\\js\\tests\\matching-question.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\wwwroot\\js\\tests\\matching-question.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\views\\tests\\taskstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\tests\\taskstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\views\\tests\\taskresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\tests\\taskresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\controllers\\culturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\controllers\\culturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\views\\tests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\tests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\resources\\views\\tests\\index.ru.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\resources\\views\\tests\\index.ru.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\wwwroot\\css\\tests\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\wwwroot\\css\\tests\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\viewmodels\\truefalsequestionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\viewmodels\\truefalsequestionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\controllers\\startcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\controllers\\startcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\resources\\views\\tests\\index.kk.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\resources\\views\\tests\\index.kk.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\viewmodels\\factories\\taskresultviewmodelfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\viewmodels\\factories\\taskresultviewmodelfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,14 +91,6 @@
       "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\services\\itestaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\controllers\\startcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\controllers\\startcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\views\\tests\\_tablequestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\tests\\_tablequestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -47,20 +99,8 @@
       "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\wwwroot\\js\\tests\\task-start.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\views\\tests\\taskstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\tests\\taskstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
       "RelativeMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\webapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -77,10 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\wwwroot\\css\\tests\\table-question.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\wwwroot\\css\\tests\\table-question.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\views\\tests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\tests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\wwwroot\\css\\start\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -115,10 +151,6 @@
       "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\resources\\views\\home\\index.kk.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|c:\\users\\user\\desktop\\expresssurveyoneconomics\\webapp\\resources\\views\\tests\\index.ru.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{3215F6CF-A442-1C21-6AD3-94ED23F4EBA5}|WebApp\\WebApp.csproj|solutionrelative:webapp\\resources\\views\\tests\\index.ru.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
@@ -130,121 +162,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TaskResultViewModelFactory.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\Factories\\TaskResultViewModelFactory.cs",
-              "RelativeDocumentMoniker": "WebApp\\ViewModels\\Factories\\TaskResultViewModelFactory.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\Factories\\TaskResultViewModelFactory.cs",
-              "RelativeToolTip": "WebApp\\ViewModels\\Factories\\TaskResultViewModelFactory.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAYwAoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T10:13:42.317Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TestTaskViewModelFactory.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\Factories\\TestTaskViewModelFactory.cs",
-              "RelativeDocumentMoniker": "WebApp\\ViewModels\\Factories\\TestTaskViewModelFactory.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\Factories\\TestTaskViewModelFactory.cs",
-              "RelativeToolTip": "WebApp\\ViewModels\\Factories\\TestTaskViewModelFactory.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAqwB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T10:13:40.204Z",
+              "Title": "_MatchingQuestion.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Views\\Tests\\_MatchingQuestion.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Tests\\_MatchingQuestion.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Views\\Tests\\_MatchingQuestion.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Tests\\_MatchingQuestion.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-19T07:31:45.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TaskResultViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\TaskResultViewModel.cs",
-              "RelativeDocumentMoniker": "WebApp\\ViewModels\\TaskResultViewModel.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\TaskResultViewModel.cs",
-              "RelativeToolTip": "WebApp\\ViewModels\\TaskResultViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T10:13:18.484Z",
+              "Title": "matching-question.js",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\wwwroot\\js\\tests\\matching-question.js",
+              "RelativeDocumentMoniker": "WebApp\\wwwroot\\js\\tests\\matching-question.js",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\wwwroot\\js\\tests\\matching-question.js",
+              "RelativeToolTip": "WebApp\\wwwroot\\js\\tests\\matching-question.js",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAuwHEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-19T07:31:24.718Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TestTaskViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\TestTaskViewModel.cs",
-              "RelativeDocumentMoniker": "WebApp\\ViewModels\\TestTaskViewModel.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\TestTaskViewModel.cs",
-              "RelativeToolTip": "WebApp\\ViewModels\\TestTaskViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T10:13:14.853Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TestEngine.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Services\\TestEngine.cs",
-              "RelativeDocumentMoniker": "WebApp\\Services\\TestEngine.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Services\\TestEngine.cs",
-              "RelativeToolTip": "WebApp\\Services\\TestEngine.cs",
-              "ViewState": "AgIAAP4AAAAAAAAAAAAswAsBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T10:11:39.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ITestEngine.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Services\\ITestEngine.cs",
-              "RelativeDocumentMoniker": "WebApp\\Services\\ITestEngine.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Services\\ITestEngine.cs",
-              "RelativeToolTip": "WebApp\\Services\\ITestEngine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T10:11:37.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ITestAccess.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Services\\ITestAccess.cs",
-              "RelativeDocumentMoniker": "WebApp\\Services\\ITestAccess.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Services\\ITestAccess.cs",
-              "RelativeToolTip": "WebApp\\Services\\ITestAccess.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T10:11:36.989Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "StartController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Controllers\\StartController.cs",
-              "RelativeDocumentMoniker": "WebApp\\Controllers\\StartController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Controllers\\StartController.cs",
-              "RelativeToolTip": "WebApp\\Controllers\\StartController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T10:10:59.197Z",
+              "DocumentIndex": 0,
+              "Title": "matching-question.css",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\wwwroot\\css\\tests\\matching-question.css",
+              "RelativeDocumentMoniker": "WebApp\\wwwroot\\css\\tests\\matching-question.css",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\wwwroot\\css\\tests\\matching-question.css",
+              "RelativeToolTip": "WebApp\\wwwroot\\css\\tests\\matching-question.css",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwFAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-19T07:31:13.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "CultureController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Controllers\\CultureController.cs",
+              "RelativeDocumentMoniker": "WebApp\\Controllers\\CultureController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Controllers\\CultureController.cs",
+              "RelativeToolTip": "WebApp\\Controllers\\CultureController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T10:56:25.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "TestsController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Controllers\\TestsController.cs",
               "RelativeDocumentMoniker": "WebApp\\Controllers\\TestsController.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Controllers\\TestsController.cs",
               "RelativeToolTip": "WebApp\\Controllers\\TestsController.cs",
-              "ViewState": "AgIAANMAAAAAAAAAAADwv+sAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALsAAAAAAAAAAAAqwMsAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-12T10:06:21.914Z",
               "EditorCaption": ""
@@ -252,45 +231,173 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "task-start.js",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\wwwroot\\js\\tests\\task-start.js",
-              "RelativeDocumentMoniker": "WebApp\\wwwroot\\js\\tests\\task-start.js",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\wwwroot\\js\\tests\\task-start.js",
-              "RelativeToolTip": "WebApp\\wwwroot\\js\\tests\\task-start.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-03-12T10:06:11.503Z",
-              "EditorCaption": ""
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\wwwroot\\css\\tests\\index.css",
+              "RelativeDocumentMoniker": "WebApp\\wwwroot\\css\\tests\\index.css",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\wwwroot\\css\\tests\\index.css",
+              "RelativeToolTip": "WebApp\\wwwroot\\css\\tests\\index.css",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwCoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-12T10:32:15.63Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
+              "Title": "TrueFalseQuestionViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\TrueFalseQuestionViewModel.cs",
+              "RelativeDocumentMoniker": "WebApp\\ViewModels\\TrueFalseQuestionViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\TrueFalseQuestionViewModel.cs",
+              "RelativeToolTip": "WebApp\\ViewModels\\TrueFalseQuestionViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T10:30:21.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TaskStart.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Views\\Tests\\TaskStart.cshtml",
               "RelativeDocumentMoniker": "WebApp\\Views\\Tests\\TaskStart.cshtml",
               "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Views\\Tests\\TaskStart.cshtml",
               "RelativeToolTip": "WebApp\\Views\\Tests\\TaskStart.cshtml",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAqwJ4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAcwJ4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-12T10:05:07.881Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TaskResult.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Views\\Tests\\TaskResult.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Tests\\TaskResult.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Views\\Tests\\TaskResult.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Tests\\TaskResult.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-12T10:58:23.17Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "docker-compose.yml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\docker-compose.yml",
-              "RelativeDocumentMoniker": "docker-compose.yml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\docker-compose.yml*",
-              "RelativeToolTip": "docker-compose.yml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-03-02T04:45:02.99Z",
-              "EditorCaption": ""
+              "Title": "StartController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Controllers\\StartController.cs",
+              "RelativeDocumentMoniker": "WebApp\\Controllers\\StartController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Controllers\\StartController.cs",
+              "RelativeToolTip": "WebApp\\Controllers\\StartController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAYwGsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T10:10:59.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Views\\Tests\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Tests\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Views\\Tests\\Index.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Tests\\Index.cshtml",
+              "ViewState": "AgIAAFQAAAAAqGxYU3EwwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-24T14:16:35.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAkwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-24T13:27:50.01Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "Index.kk.resx",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Resources\\Views\\Tests\\Index.kk.resx",
+              "RelativeDocumentMoniker": "WebApp\\Resources\\Views\\Tests\\Index.kk.resx",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Resources\\Views\\Tests\\Index.kk.resx",
+              "RelativeToolTip": "WebApp\\Resources\\Views\\Tests\\Index.kk.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-03-12T10:25:02.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TaskResultViewModelFactory.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\Factories\\TaskResultViewModelFactory.cs",
+              "RelativeDocumentMoniker": "WebApp\\ViewModels\\Factories\\TaskResultViewModelFactory.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\Factories\\TaskResultViewModelFactory.cs",
+              "RelativeToolTip": "WebApp\\ViewModels\\Factories\\TaskResultViewModelFactory.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAYwAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T10:13:42.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.ru.resx",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Resources\\Views\\Tests\\Index.ru.resx",
+              "RelativeDocumentMoniker": "WebApp\\Resources\\Views\\Tests\\Index.ru.resx",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Resources\\Views\\Tests\\Index.ru.resx",
+              "RelativeToolTip": "WebApp\\Resources\\Views\\Tests\\Index.ru.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-02-24T12:50:42.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TestTaskViewModelFactory.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\Factories\\TestTaskViewModelFactory.cs",
+              "RelativeDocumentMoniker": "WebApp\\ViewModels\\Factories\\TestTaskViewModelFactory.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\Factories\\TestTaskViewModelFactory.cs",
+              "RelativeToolTip": "WebApp\\ViewModels\\Factories\\TestTaskViewModelFactory.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T10:13:40.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TaskResultViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\TaskResultViewModel.cs",
+              "RelativeDocumentMoniker": "WebApp\\ViewModels\\TaskResultViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\TaskResultViewModel.cs",
+              "RelativeToolTip": "WebApp\\ViewModels\\TaskResultViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T10:13:18.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TestTaskViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\TestTaskViewModel.cs",
+              "RelativeDocumentMoniker": "WebApp\\ViewModels\\TestTaskViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\ViewModels\\TestTaskViewModel.cs",
+              "RelativeToolTip": "WebApp\\ViewModels\\TestTaskViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T10:13:14.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TestEngine.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Services\\TestEngine.cs",
+              "RelativeDocumentMoniker": "WebApp\\Services\\TestEngine.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Services\\TestEngine.cs",
+              "RelativeToolTip": "WebApp\\Services\\TestEngine.cs",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAswAsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T10:11:39.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Program.cs",
               "RelativeDocumentMoniker": "WebApp\\Program.cs",
@@ -302,7 +409,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
+              "Title": "ITestEngine.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Services\\ITestEngine.cs",
+              "RelativeDocumentMoniker": "WebApp\\Services\\ITestEngine.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Services\\ITestEngine.cs",
+              "RelativeToolTip": "WebApp\\Services\\ITestEngine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T10:11:37.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ITestAccess.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Services\\ITestAccess.cs",
+              "RelativeDocumentMoniker": "WebApp\\Services\\ITestAccess.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Services\\ITestAccess.cs",
+              "RelativeToolTip": "WebApp\\Services\\ITestAccess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T10:11:36.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "task-start.js",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\wwwroot\\js\\tests\\task-start.js",
+              "RelativeDocumentMoniker": "WebApp\\wwwroot\\js\\tests\\task-start.js",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\wwwroot\\js\\tests\\task-start.js",
+              "RelativeToolTip": "WebApp\\wwwroot\\js\\tests\\task-start.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-12T10:06:11.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-03-02T04:45:02.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\appsettings.json",
               "RelativeDocumentMoniker": "WebApp\\appsettings.json",
@@ -314,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 27,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "WebApp\\Properties\\launchSettings.json",
@@ -326,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 28,
               "Title": "table-question.css",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\wwwroot\\css\\tests\\table-question.css",
               "RelativeDocumentMoniker": "WebApp\\wwwroot\\css\\tests\\table-question.css",
@@ -338,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 22,
               "Title": "_TableQuestion.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Views\\Tests\\_TableQuestion.cshtml",
               "RelativeDocumentMoniker": "WebApp\\Views\\Tests\\_TableQuestion.cshtml",
@@ -346,12 +501,11 @@
               "RelativeToolTip": "WebApp\\Views\\Tests\\_TableQuestion.cshtml",
               "ViewState": "AgIAADsAAAAAAAAAAADwv1MAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-24T14:19:52.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-24T14:19:52.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 25,
               "Title": "WebApp.csproj",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\WebApp.csproj",
               "RelativeDocumentMoniker": "WebApp\\WebApp.csproj",
@@ -363,20 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "WebApp\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "WebApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAE0AAAAAAAAAAADwv2UAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-24T13:27:50.01Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 37,
               "Title": ".env",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\.env",
               "RelativeDocumentMoniker": ".env",
@@ -388,19 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Views\\Tests\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApp\\Views\\Tests\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Views\\Tests\\Index.cshtml",
-              "RelativeToolTip": "WebApp\\Views\\Tests\\Index.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADYAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-24T14:16:35.65Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 29,
               "Title": "index.css",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\wwwroot\\css\\start\\index.css",
               "RelativeDocumentMoniker": "WebApp\\wwwroot\\css\\start\\index.css",
@@ -412,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 32,
               "Title": "layout.css",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\wwwroot\\css\\shared\\layout.css",
               "RelativeDocumentMoniker": "WebApp\\wwwroot\\css\\shared\\layout.css",
@@ -424,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 31,
               "Title": "index.css",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\wwwroot\\css\\home\\index.css",
               "RelativeDocumentMoniker": "WebApp\\wwwroot\\css\\home\\index.css",
@@ -436,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 33,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "WebApp\\Views\\Home\\Index.cshtml",
@@ -448,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 34,
               "Title": "_Layout.ru.resx",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Resources\\Views\\Shared\\_Layout.ru.resx",
               "RelativeDocumentMoniker": "WebApp\\Resources\\Views\\Shared\\_Layout.ru.resx",
@@ -459,7 +588,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 35,
               "Title": "_Layout.kk.resx",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Resources\\Views\\Shared\\_Layout.kk.resx",
               "RelativeDocumentMoniker": "WebApp\\Resources\\Views\\Shared\\_Layout.kk.resx",
@@ -470,7 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 36,
               "Title": "Index.kk.resx",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Resources\\Views\\Home\\Index.kk.resx",
               "RelativeDocumentMoniker": "WebApp\\Resources\\Views\\Home\\Index.kk.resx",
@@ -481,18 +610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Index.ru.resx",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Resources\\Views\\Tests\\Index.ru.resx",
-              "RelativeDocumentMoniker": "WebApp\\Resources\\Views\\Tests\\Index.ru.resx",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Resources\\Views\\Tests\\Index.ru.resx",
-              "RelativeToolTip": "WebApp\\Resources\\Views\\Tests\\Index.ru.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-02-24T12:50:42.399Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 30,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ExpressSurveyOnEconomics\\WebApp\\Views\\Start\\Index.cshtml",
               "RelativeDocumentMoniker": "WebApp\\Views\\Start\\Index.cshtml",

@@ -7,7 +7,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.2rem;
-    align-items: stretch;
 }
 
 .column {
@@ -15,82 +14,141 @@
     flex-direction: column;
 }
 
-.column h6 {
-    margin: 0 0 1.1rem;
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #374151;
-    flex-shrink: 0;
-}
+    .column h6 {
+        margin: 0 0 1.1rem;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #374151;
+        flex-shrink: 0;
+    }
 
 .terms-list,
 .definitions-list {
     display: flex;
     flex-direction: column;
-    flex: 1;
     gap: 1rem;
 }
 
 .definition-card,
-.term-card {
-    flex: 1;
-    border-radius: 1.25rem;
-    padding: 1.25rem 1.375rem;
-    display: flex;
+.card.definition-card {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
     justify-content: center;
-    align-items: center;
     text-align: center;
+    border-radius: 1.25rem !important;
+    padding: 1.25rem 1.375rem !important;
     line-height: 1.45;
     font-size: 0.96rem;
     font-weight: 500;
     box-sizing: border-box;
-    overflow: hidden;
-    transition: box-shadow 0.22s ease, transform 0.22s ease;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    border: 1px solid #e5e7eb;
-    background: white;
-    color: #111827;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08) !important;
+    border: 1px solid #e5e7eb !important;
+    background: #f9fafb !important;
+    color: #111827 !important;
+    user-select: none;
+    margin: 0 !important;
+}
+
+.term-card,
+.card.term-card {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start;
+    text-align: left;
+    border-radius: 1.25rem !important;
+    padding: 1.25rem 1.375rem !important;
+    line-height: 1.45;
+    font-size: 0.96rem;
+    font-weight: 500;
+    box-sizing: border-box;
+    cursor: grab;
+    transition: box-shadow 0.22s ease, transform 0.22s ease, border-color 0.18s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08) !important;
+    border: 1px solid #e5e7eb !important;
+    background: white !important;
+    color: #111827 !important;
     user-select: none;
     -webkit-user-select: none;
+    margin: 0 !important;
 }
 
-.term-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 24px rgba(99, 102, 241, 0.28);
+    .term-card:hover,
+    .card.term-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(99, 102, 241, 0.2) !important;
+        border-color: #a5b4fc !important;
+    }
+
+.drag-icon {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 3.5px;
+    flex-shrink: 0;
+    margin-right: 12px;
+    opacity: 0.25;
+    transition: opacity 0.18s ease;
 }
 
-.drag-ghost {
+    .drag-icon span {
+        display: block;
+        width: 15px;
+        height: 2px;
+        background: currentColor;
+        border-radius: 2px;
+    }
+
+.term-card:hover .drag-icon {
+    opacity: 0.55;
+}
+
+.ghost-card {
     position: fixed;
     pointer-events: none;
-    z-index: 1000;
-    opacity: 0.85;
-    transform: scale(1.04);
-    box-shadow: 0 20px 48px rgba(99, 102, 241, 0.38);
-    border-radius: 1.25rem;
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    color: #1f2937;
+    z-index: 9999;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
+    border-radius: 1.25rem;
+    padding: 1.25rem 1.375rem;
+    background: #eef2ff;
+    border: 1.5px solid #818cf8;
+    color: #3730a3;
+    box-shadow: 0 12px 32px rgba(99,102,241,0.28);
+    transform: rotate(1.5deg) scale(1.03);
     font-size: 0.96rem;
     font-weight: 500;
     line-height: 1.45;
-    padding: 1.25rem 1.375rem;
-    transition: none;
-}
-
-.drop-placeholder {
-    flex: 1;
-    border-radius: 1.25rem;
-    background: #f1f5f9;
-    border: 2px dashed #94a3b8;
-    opacity: 0.6;
-    transition: none;
 }
 
 .term-card.is-dragging {
     visibility: hidden;
     cursor: grabbing;
+}
+
+.term-card.drag-over-top {
+    border-top: 2px solid #6366f1 !important;
+}
+
+.term-card.drag-over-bottom {
+    border-bottom: 2px solid #6366f1 !important;
+}
+
+@keyframes swapPop {
+    0% {
+        transform: scale(0.96);
+    }
+
+    60% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.term-card.animate-swap {
+    animation: swapPop 0.3s ease;
 }

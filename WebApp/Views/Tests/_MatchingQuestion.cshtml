@@ -18,7 +18,12 @@
             <div class="terms-list" id="sortable_@Model.Id">
                 @for (int i = 0; i < Model.RightItems.Count; i++)
                 {
-                    <div class="card term-card" data-index="@Model.RightItemIndices[i]">@Model.RightItems[i]</div>
+                    <div class="card term-card" data-index="@Model.RightItemIndices[i]">
+                        <span class="drag-icon">
+                            <span></span><span></span><span></span>
+                        </span>
+                        <span class="term-text">@Model.RightItems[i]</span>
+                    </div>
                 }
             </div>
         </div>
