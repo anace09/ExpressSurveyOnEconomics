@@ -312,11 +312,6 @@ C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\
 C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\ru\WebApp.resources.dll
 C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\staticwebassets\msbuild.WebApp.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\staticwebassets\msbuild.build.WebApp.props
-C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.WebApp.props
-C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.WebApp.props
-C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\scopedcss\bundle\WebApp.styles.css
 C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\WebApp.csproj.Up2Date
 C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\WebApp.dll
@@ -489,3 +484,13 @@ C:\Users\User\Desktop\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\refint\We
 C:\Users\User\Desktop\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\WebApp.pdb
 C:\Users\User\Desktop\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\WebApp.genruntimeconfig.cache
 C:\Users\User\Desktop\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\ref\WebApp.dll
+C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\bin\Debug\net8.0\WebApp.staticwebassets.endpoints.json
+C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\kk\WebApp.resources.cs
+C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\ru\WebApp.resources.cs
+C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\User\Documents\GitHub\ExpressSurveyOnEconomics\WebApp\obj\Debug\net8.0\swae.build.ex.cache
